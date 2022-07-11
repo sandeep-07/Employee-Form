@@ -92,6 +92,11 @@ form.addEventListener('submit',(event)=>{
     if(!foccussed){
         document.querySelector(".success").classList.add('display-success');
         document.querySelector(".success").innerHTML="Thank You"
+
+        setTimeout(()=>{
+            document.querySelector(".success").classList.remove('display-success');
+            document.querySelector(".success").innerHTML=""
+        },2500)
     }
 
 })
