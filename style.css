@@ -96,6 +96,7 @@ form .common_radio p{
 	border: 1px solid #D82E2F;
 	border-radius:20px;
 	color: #D82E2F;
+	margin-bottom: 18px;
 
 }
 .pointer{
@@ -123,4 +124,9 @@ form .common_radio p{
 	padding: 10px;
 	border: thin solid #e4e4e4;
 	cursor: pointer;
+}
+.terms{
+	margin-right: 2px;
+	position: relative;
+	top: 2px;
 }
