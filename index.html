@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <title>Employee Form</title>
 </head>
@@ -13,33 +13,29 @@
     <div class="container">
         <form action="#" method="post" id="employee-form">
 
-            <label for="fame">First Name*</label>
+            <label for="fname">First Name*</label>
             <input type="text" id="fname" name="fname" autofocus>
             <p class="error fname_error"></p>
             <br>
-
-            <label for="lame">Last Name*</label>
-            <input type="text" id="lname" name="lname">
-            <p class="error lname_error"></p>
-            
-            <span>Gender*</span>
-            <div class="gender">
-                <p>
-                    <input type="radio" id="male" name="gender" value="male"  checked><span>Male</span>
-                </p>
-                <p>
-                    <input type="radio" id="female" name="gender" value="female"> <span>Female</span>
-                </p>
+            <label for="lname" class="label">Last Name*</label> <input type="text" id="lname" name="lname"> <p class="error lname_error"></p>
+            <label for="gender">Gender*</label>
+            <div class="common_radio">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" checked><span>Male</span>
+                </label >
+                <label >
+                    <input type="radio" id="female" name="gender" value="female" > <span>Female</span>
+                </label>
             </div>
 
-            <span>Marital Status*</span>
-            <div class="gender">
-                <p>
-                    <input type="radio" id="married" name="marital_status" value="married" checked><span>Married</span>
-                </p>
-                <p>
-                    <input type="radio" id="unmarried" name="marital_status" value="unmarried"><span>Unmarried</span>
-                </p>
+            <label for="martial_status">Marital Status*</label>
+            <div class="common_radio">
+                <label>
+                    <input class="pointer" type="radio" id="married" name="marital_status" value="married" checked><span>Married</span>
+                </label>
+                <label>
+                    <input class="pointer" type="radio" id="unmarried" name="marital_status" value="unmarried"><span>Unmarried</span>
+                </label>
             </div>
 
             <label for="spname">Spouse Name*</label>
@@ -51,12 +47,13 @@
             <input type="text" name="other-details" id="other-details">
             <p class="error odet_error"></p>
             <br>
+            <div class="pointer">
+                <input type="checkbox" name="terms" id="terms" value="term-accepted" required class="terms pointer">
+                <label id="terms" class="pointer">I accept Terms and Conditions</label>
+            </div>
 
-            <input type="checkbox" name="terms" id="terms" value="term-accepted" required class="terms">
-            <span id="terms">I accept Terms and Conditions</span>
-
-            <input type="reset" value="Reset">
-            <input type="submit" value="Save">
+            <input type="reset" value="Reset" class="button btn-reset pointer">
+            <input type="submit" value="Save"  class="button btn-save pointer">
         </form>
     </div>
 </body>

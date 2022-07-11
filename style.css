@@ -1,5 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
+	box-sizing: border-box;
 	color:#555;
+}
+h1{
+	margin: 25px;
+}
+@media only screen and (max-width: 500px) {
+	form{
+		width: 95%;
+	}
+	form input{
+		width: 94%;
+	}
 }
 .container{
 	max-width: 1000px;
@@ -9,31 +25,36 @@ form{
 	margin: 50px auto;
 	max-width: 450px;
 }
+.label{
+	margin-bottom: 10px;
+}
 input{
 	padding: 10px;
-	width:  100%;
+	width:  95%;
 	margin-bottom: 10px;
 	border:  thin solid #d4d4d4;
 	font-size: 16px;
 	outline: none;
 	margin-bottom: 30px;
+	margin-top: 10px;
 }
 input:focus{
 	border-color: orange;
 }
-.gender{
+.common_radio{
+	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 10px;
 	margin-bottom: 30px;
 }
-.gender input{
+.common_radio input{
 	display: inline-block;
 	padding: 0 0;
 	margin-bottom: 0;
 	width:  auto;
 }
-form .gender p{
+form .common_radio p{
 	background-color: #f4f4f4;
 	padding: 10px;
 	border: thin solid #e4e4e4;
@@ -42,7 +63,6 @@ form .gender p{
 	color: #af4242;
 	background-color: #fde8ec;
 	padding: 10px;
-	/*visibility: hidden;*/
 	display: none;
 }
 .display-error{
@@ -55,7 +75,32 @@ form .gender p{
 	position: relative;
 	width:auto;
 }
+.button{
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+}
+.btn-save{
+	background-color: #fff;
+	border: 1px solid #4DD637;
+	border-radius: 20px;
+	color: #4DD637;
 
+}
+.common_radio>label >span{
+	margin-left: 4px;
+	font-size: 0.9rem;
+}
+.btn-reset{
+	background-color: #fff;
+	border: 1px solid #D82E2F;
+	border-radius:20px;
+	color: #D82E2F;
+
+}
+.pointer{
+	cursor: pointer;
+}
 .success{
 	margin-bottom: 30px;
 	color: green;
@@ -68,4 +113,14 @@ form .gender p{
 }
 .success.display-success{
 	display: block;
+}
+#terms{
+	font-size: 13px;
+}
+.common_radio >label {
+	display: block;
+	background-color: #f4f4f4;
+	padding: 10px;
+	border: thin solid #e4e4e4;
+	cursor: pointer;
 }
