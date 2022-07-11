@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Form</title>
+</head>
+<body>
+    <center><h1>Employee Form</h1></center>
+    <p class="success register-success"></p>
+    <div class="container">
+        <form action="#" method="post" id="employee-form">
+
+            <label for="fame">First Name*</label>
+            <input type="text" id="fname" name="fname" autofocus>
+            <p class="error fname_error"></p>
+            <br>
+
+            <label for="lame">Last Name*</label>
+            <input type="text" id="lname" name="lname">
+            <p class="error lname_error"></p>
+            
+            <span>Gender*</span>
+            <div class="gender">
+                <p>
+                    <input type="radio" id="male" name="gender" value="male"  checked><span>Male</span>
+                </p>
+                <p>
+                    <input type="radio" id="female" name="gender" value="female"> <span>Female</span>
+                </p>
+            </div>
+
+            <span>Marital Status*</span>
+            <div class="gender">
+                <p>
+                    <input type="radio" id="married" name="marital_status" value="married" checked><span>Married</span>
+                </p>
+                <p>
+                    <input type="radio" id="unmarried" name="marital_status" value="unmarried"><span>Unmarried</span>
+                </p>
+            </div>
+
+            <label for="spname">Spouse Name*</label>
+            <input type="text" name="spname" id="spname">
+            <p class="error spname_error"></p>
+            <br>
+            
+            <label for="other-details">Other Details</label>
+            <input type="text" name="other-details" id="other-details">
+            <p class="error odet_error"></p>
+            <br>
+
+            <input type="checkbox" name="terms" id="terms" value="term-accepted" required class="terms">
+            <span id="terms">I accept Terms and Conditions</span>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Save">
+        </form>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
