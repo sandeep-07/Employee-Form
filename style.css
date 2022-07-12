@@ -89,7 +89,9 @@ form .common_radio p{
 }
 .common_radio>label >span{
 	margin-left: 4px;
-	font-size: 0.9rem;
+	font-size: 0.95rem;
+	position: relative;
+	bottom: 2px;
 }
 .btn-reset{
 	background-color: #fff;
